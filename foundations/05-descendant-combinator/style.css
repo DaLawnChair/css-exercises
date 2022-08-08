@@ -1,0 +1,19 @@
+/* Descendant combinators with types
+div p
+{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;   
+}
+*/
+/* Descendant combinators with classes*/
+.container .text
+{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;  
+}
+
+/* You can do any combinaton of class and types for descandant combinators */
