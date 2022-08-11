@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 8px; /* Ensures space between the children*/
+
 }
 
 .logo {
@@ -9,11 +15,20 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  display:flex;
+
+  /* Get rid of space between the ul so that the children can lay as close to the edge as possible */
+  margin: 0px; 
+  padding: 0px;  
+  gap: 8px; /* Spaces elements from each other */
 }
 
 a {

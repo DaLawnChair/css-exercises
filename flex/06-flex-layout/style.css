@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +19,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  padding: 16px;
 }
 
 input {
@@ -24,4 +29,49 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul
+{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px
+}
+
+a 
+{
+  color: black;
+  text-decoration: none;
+}
+
+.header, .footer
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.footer
+{
+  padding: 8px 16px;
+  background: #eeeeee;
+}
+
+.left-links, .right-links
+{
+  display: flex;
+  gap: 8px;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: column;
+  /* flex-growth: 1 makes the content part shift to the middle of the page??? It grows to fit as much space as possible, which somehow makes it in the middle??? It kinda makes sense as its between 2 elements and
+  being in the middle should take up the most space. If you add flex:1 to .header, .footer, it grows to fill the remaining space so it might make senese. BUT */ 
+  /*justify-content: center; /* somehow doesn't work with this!*/
+  flex: 1; 
+  align-items: center;
+  justify-content: center;
 }
